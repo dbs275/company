@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dela Gothic One", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 0;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.menu{
+    background-color: black;
+    height: 65px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.menu-links{
+    float: right;
+}
+.menu-links a:hover{
+    color: orange;
+    transform: scale(1.1);
+}
+.menu-links a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    margin-left: 15px;
+    line-height: 45px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+
+
+
+
+.header{
+    background: linear-gradient( #DB7E7E , #FFC997);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+}
+.header-title{
+    color: white;
+    font-size: 70px;
+    text-shadow: 5px 5px 1px rgb(241, 114, 102);
+}
+.header-link:hover{
+    background-color: rgb(255, 235, 234);
+    transform: scale(1.02);
+}
+.header-link{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 1px rgb(241, 114, 102);
+    padding: 20px 30px;
+    margin: 20px auto;
+    width: fit-content;
+    transition: 0.2s;
+}
+.circle-dashed-border{
+    position: absolute;
+    right: -120px;
+    bottom: -150px;
+    width: 450px;
+    animation: rotation 10s linear infinite;
+}
+.circle-bordered{
+    position: absolute;
+    bottom: -40px;
+    left: 325px;
+    z-index: 999;
+}
+.circle1{
+    position: absolute;
+    top: -90px;
+    left: -20px;
+}
+.circle2{
+    position: absolute;
+    top: -110px;
+    right: -30px;
+}
+.circle3{
+    position: absolute;
+    bottom: -210px;
+    left: -90px;
+    z-index: 998;
+}
+.octagon{
+    position: absolute;
+    top: 450px;
+    left: 770px;
+    animation: move 5s linear infinite;
+}
+.triangle{
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    animation: move2 5s linear infinite;
+}
+
+
+
+.doing{
+    background: linear-gradient(7deg, #DB7E7E 18.07%, #FFC997 70%, #FFFFFF 70%);
+}
+.doing-left{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+.doing-right{
+    width: 49%;
+    display: inline-block;
+}
+.doing-pic{
+    width: 100%;
+}
+.doing-left p{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 1px rgb(241, 114, 102);
+    padding: 15px;
+}
+
+
+
+.service{
+    background: linear-gradient(340.62deg, #FFFFFF 45.63%, #DB7F7E 45.64%);
+    text-align: center;
+}
+.service-card{
+    width: 30%;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 4px solid rgb(254, 210, 152);
+    vertical-align: top;
+    margin: 10px;
+    padding: 25px 10px;
+    height: 400px;
+}
+.service-card hr{
+    margin: 15px auto;
+    width: 50%;
+    height: 4px;
+    background-color: rgb(241, 114, 102);
+}
+.service-title{
+    color: white;
+}
+
+
+.advantages{
+    position: relative;
+}
+.advantages-card{
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid rgb(254, 210, 152);
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 7px 7px 1px rgb(241, 114, 102);
+}
+li{
+    list-style-type: circle;
+}
+ul{
+    padding-left: 10px;
+}
+.ac1{
+    position: relative;
+    left: -100px;
+}
+.ac2{
+    position: relative;
+    left: 100px;
+}
+.ac3{
+    position: relative;
+    left: -50px;
+}
+.advantages-bg1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    z-index: -1;
+}
+.advantages-bg2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+}
+
+
+
+.works-card:hover{
+    transform: scale(1.02);
+    opacity: 1;
+}
+.works-card{
+    width: 49%;
+    display: inline-block;
+    height: 230px;
+    border-radius: 20px;
+    border: 4px solid rgb(241, 114, 102);
+    opacity: 0.9;
+
+}
+.wc1{
+    background: url(img/portfolio/site1.png) center/cover no-repeat;
+}
+.wc2{
+    background: url(img/portfolio/site2.png) center/cover no-repeat;
+}
+.wc3{
+    background: url(img/portfolio/site3.png) center/cover no-repeat;
+}
+.wc4{
+    background: url(img/portfolio/site4.png) center/cover no-repeat;
+}
+
+
+
+
+.support{
+    background: linear-gradient( #DB7E7E , #FFC997)
+}
+.support-link:hover{
+    background-color: rgb(255, 235, 234);
+    transform: scale(1.02);
+}
+.support-link{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 1px rgb(241, 114, 102);
+    padding: 20px 30px;
+    margin: 20px auto;
+    width: fit-content;
+    transition: 0.2s;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes move{
+    0%{
+        transform: translate(0,0) rotate(0);
+    }
+    50%{
+        transform: translate(129px,40px) rotate(180deg);
+    }
+    100%{
+        transform: translate(0,0) rotate(360deg);
+    }
+}
+@keyframes move2{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(120px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@media(max-width:1300px){
+    .circle3{
+        width: 35%;
+    }
+    .advantages-bg2{
+        width: 200px;
+    }
+}
+@media(max-width:1170px){
+    .menu{
+        height: fit-content;
+    }
+}
+@media(max-width:1000px){
+    .menu-links a{
+        margin-left: 100px;
+    }
+    .about p{
+        padding: 10px;
+    }
+    .advantages-bg1{
+        display: none;
+    }
+    .advantages-bg2{
+        display: none;
+    }
+}
+@media(max-width:835px){
+    .menu-links a{
+        margin-left: 60px;
+    }
+    .header-title{
+        width: 500px;
+        margin: auto;
+        text-align: center;
+        font-size: 55px;
+    }
+    .circle-dashed-border{
+        display: none;
+    }
+    .circle-bordered{
+        display: none;
+    }
+    .circle1{
+        display: none;
+    }
+    .circle2{
+        display: none;
+    }
+    .circle3{
+        display: none;
+    }
+    .octagon{
+        display: none;
+    }
+    .triangle{
+        display: none;
+    }
+}
+@media(max-width:770px){
+    .doing-left{
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+    }
+    .doing-right{
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+    }
+    .service-card{
+        display: block;
+        margin: 10px auto;
+        width: 50%;
+    }
+    .ac1{
+       left: 0; 
+    }
+    .ac2{
+        left: 0;
+    }
+    .ac3{
+        left: 0;
+    }
+    .works-card{
+        display: block;
+        margin: 10px auto;
+        width: 65%;
+    }
+}
+@media(max-width:720px){
+    .menu-links a{
+        margin-left: 30px;
+    }
+}
+@media(max-width:630px){
+    .menu-links a{
+        margin-left: 35px;
+        font-size: 20px;
+    }
+}
+@media(max-width:595px){
+    .menu-links a{
+        margin-left: 25px;
+        font-size: 18px;
+    }
+    .doing-left{
+        width: 85%;
+    }
+}
+@media(max-width:520px){
+    .menu-links a{
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    .advantages-card{
+        width: 85%;
+    }
+    .works-card{
+        width: 85%;
+    }
+}
+@media(max-width:490px){
+    .menu-links a{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    .menu img{
+        display: none;
+    }
+}
+@media(max-width:475px){
+    .menu-links a{
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .service-card{
+        width: 70%;
+    }
+}
+@media(max-width:430px){
+    .menu-links a{
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    .header-title{
+        font-size: 40px;
+        width: 300px;
+    }
+    .section-title{
+        font-size: 25px;
+    }
+}
